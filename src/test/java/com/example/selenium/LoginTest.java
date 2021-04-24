@@ -6,6 +6,10 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void login() {
-        // TODO use steps for the login and logout
+        String userName = "tomsmith";
+        String password = "SuperSecretPassword!";
+
+        userSteps.login(userName,password);
+        userSteps.logout();
     }
 }
